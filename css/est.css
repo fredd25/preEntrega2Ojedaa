@@ -1,0 +1,200 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+/* ajuste de color responsive + variables*/
+nav {
+  background-image: radial-gradient(circle, rgb(194, 226, 194), white);
+}
+@media (max-width: 1000px) {
+  nav {
+    background-image: radial-gradient(circle, rgb(190, 215, 255), white);
+  }
+}
+
+body {
+  background-color: rgb(194, 226, 194);
+}
+@media (max-width: 1000px) {
+  body {
+    background-color: rgb(190, 215, 255);
+  }
+}
+
+/*grilla1 index(responsive)*/
+#grilla1 {
+  display: grid;
+  grid-template-areas: "vision nada carru" "mision nada carru" "core   nada carru";
+  grid-template-columns: 45% 5% 50%;
+  grid-template-rows: auto auto auto;
+}
+
+#grilla1 .vision {
+  grid-area: vision;
+  padding: 3%;
+  font-style: inherit;
+}
+
+#grilla1 .mision {
+  grid-area: mision;
+  padding: 3%;
+}
+
+#grilla1 .core {
+  grid-area: core;
+  padding: 3%;
+}
+
+#grilla1 .carru {
+  grid-area: carru;
+  padding: 3%;
+}
+
+/*grilla 2 (responsive) pagina: galeria*/
+#grilla2 {
+  display: grid;
+  grid-template-areas: "video1  img2  img3 " "img4  img5  img6 " "img7  img8  carru2";
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: auto auto auto;
+}
+
+#grilla2 .video1 {
+  grid-area: video1;
+  padding: 3%;
+}
+
+#grilla2 .img2 {
+  grid-area: img2;
+  padding: 3%;
+}
+
+#grilla2 .img3 {
+  grid-area: img3;
+  padding: 3%;
+}
+
+#grilla2 .img4 {
+  grid-area: img4;
+  padding: 3%;
+}
+
+#grilla2 .img5 {
+  grid-area: img5;
+  padding: 3%;
+}
+
+#grilla2 .img6 {
+  grid-area: img6;
+  padding: 3%;
+}
+
+#grilla2 .img7 {
+  grid-area: img7;
+  padding: 3%;
+}
+
+#grilla2 .img8 {
+  grid-area: img8;
+  padding: 3%;
+}
+
+#grilla2 .carru2 {
+  grid-area: carru2;
+  padding: 3%;
+}
+
+/*grilla 3 paginas: productos*/
+#grilla3 {
+  display: grid;
+  grid-template-areas: "boton" "descripcion" "imagen";
+  grid-template-columns: 100%;
+  grid-template-rows: 95px 160px 60%;
+}
+
+/* creacion de mixin*/
+.listarex {
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  width: 75px;
+  height: 35px;
+  border-color: black;
+}
+
+.listaaxe {
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  width: 75px;
+  height: 35px;
+  border-color: black;
+}
+
+.listadove {
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  width: 75px;
+  height: 35px;
+  border-color: black;
+}
+
+/* uso de Nesting*/
+#grilla3 .boton2 {
+  grid-area: boton;
+  display: flex;
+  width: 95%;
+  margin: 2px;
+  padding: 2px;
+}
+#grilla3 .boton2 .lis2 {
+  font-size: medium;
+}
+#grilla3 .boton2 .lis2 .btn-dark {
+  border-color: black;
+  color: black;
+  background-color: rgb(191, 255, 0);
+  font-family: "Roboto Mono", monospace;
+}
+#grilla3 .boton2 .lis2 .btn-success {
+  border-color: black;
+  color: black;
+  background-color: rgb(0, 255, 195);
+  font-family: "Roboto Mono", monospace;
+}
+#grilla3 .boton2 .lis2 .btn-warning {
+  border-color: black;
+  color: black;
+  background-color: rgb(230, 98, 223);
+  font-family: "Roboto Mono", monospace;
+}
+#grilla3 .descripcion {
+  grid-area: descripcion;
+  display: flex;
+  height: 160px;
+  width: 800px;
+  font-family: "Roboto Mono", monospace;
+  padding: 10px;
+  margin: 10px;
+}
+#grilla3 .descripcion .texto2 {
+  /* texto de descripcion de producto */
+  background: rgb(53, 129, 118);
+  border: 2px solid rgb(35, 33, 33);
+  padding: 5px;
+  font-family: "Roboto Mono", monospace;
+}
+#grilla3 .imgproducto {
+  grid-area: imagen;
+  display: flex;
+  height: 100%;
+}
+#grilla3 .imgproducto .imagenes2 {
+  /* dimensiones de imagen para productos*/
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  height: 360px;
+}/*# sourceMappingURL=est.css.map */

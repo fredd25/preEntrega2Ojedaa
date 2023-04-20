@@ -1,0 +1,94 @@
+/*grilla1 index(responsive)*/
+#grilla1{
+    display: grid;
+    grid-template-areas:    
+    "vision nada carru"
+    "mision nada carru"
+    "core   nada carru";
+    grid-template-columns: 45% 5% 50% ;
+    grid-template-rows: auto auto auto;
+}
+#grilla1 .vision{
+    grid-area: vision;
+    padding: 3%;
+    font-style: inherit;
+}
+
+#grilla1 .mision{
+    grid-area: mision;
+    padding: 3%;
+}  
+
+#grilla1 .core{
+    grid-area: core;
+    padding: 3%;
+}
+
+#grilla1 .carru{
+    grid-area: carru;
+    padding: 3%;
+}
+
+/*grilla 2 (responsive) pagina: galeria*/
+#grilla2{
+    display: grid;
+    grid-template-areas:    
+    "video1  img2  img3 "
+    "img4  img5  img6 "
+    "img7  img8  carru2";
+    grid-template-columns:  30%  30%  30%;
+    grid-template-rows: auto auto auto;
+}
+
+#grilla2 .video1{
+    grid-area: video1;
+    padding: 3%;
+}
+
+#grilla2 .img2{
+    grid-area: img2;
+    padding: 3%;
+}
+
+#grilla2 .img3{
+    grid-area: img3;
+    padding: 3%;
+}
+
+#grilla2 .img4{
+    grid-area: img4;
+    padding: 3%;
+}
+
+#grilla2 .img5{
+    grid-area: img5;
+    padding: 3%;
+}
+
+#grilla2 .img6{
+    grid-area: img6;
+    padding: 3%;
+}
+
+#grilla2 .img7{
+    grid-area: img7;
+    padding: 3%;
+}
+
+#grilla2 .img8{
+    grid-area: img8;
+    padding: 3%;
+}
+
+#grilla2 .carru2{
+    grid-area: carru2;
+    padding: 3%;
+}
+
+  /*grilla 3 paginas: productos*/
+  #grilla3 {
+    display: grid;
+    grid-template-areas:  "boton" "descripcion" "imagen";
+    grid-template-columns: 100%;
+    grid-template-rows:  95px 160px 60%;
+  }
